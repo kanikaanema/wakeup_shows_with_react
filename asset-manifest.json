@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wakeup_shows_with_react/static/css/main.664f9825.css",
-    "main.js": "/wakeup_shows_with_react/static/js/main.e3a41937.js",
+    "main.js": "/wakeup_shows_with_react/static/js/main.55404e52.js",
     "index.html": "/wakeup_shows_with_react/index.html",
     "main.664f9825.css.map": "/wakeup_shows_with_react/static/css/main.664f9825.css.map",
-    "main.e3a41937.js.map": "/wakeup_shows_with_react/static/js/main.e3a41937.js.map"
+    "main.55404e52.js.map": "/wakeup_shows_with_react/static/js/main.55404e52.js.map"
   },
   "entrypoints": [
     "static/css/main.664f9825.css",
-    "static/js/main.e3a41937.js"
+    "static/js/main.55404e52.js"
   ]
 }
