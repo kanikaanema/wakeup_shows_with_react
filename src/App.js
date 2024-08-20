@@ -1,5 +1,5 @@
 import './App.css';
-import { RouterProvider, Route, createRoutesFromElements, } from 'react-router-dom';
+import { RouterProvider, Route, createRoutesFromElements, BrowserRouter, Routes, } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom';
 import Root from "./components/Root/Root"
 import Shows from './components/Shows/Shows';
@@ -8,19 +8,20 @@ import SearchResult from './components/SearchResults/SearchResults';
 
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path='/wakeup_shows_with_react' element={<Root />}>
-        <Route path='/Shows' element={<Shows />} />,
-        <Route path='/search-result' element={<SearchResult />} />
-      </Route>
-    )
-  )
+
 
   return (
     <ShowsContextProvider>
 
-      <RouterProvider router={router} />
+      <BrowserRouter basename='/wakeup_shows_with_react'>
+        <Routes>
+          <Route path='/' element={<Root />}>
+            <Route path='/shows' element={<Shows />} />,
+            <Route path='/search-result' element={<SearchResult />} />
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
 
     </ShowsContextProvider>
   )
