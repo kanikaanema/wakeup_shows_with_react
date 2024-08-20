@@ -12,11 +12,11 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
  
-
+  
+  const {data} = useContext(ShowsContext);
   const [isSearching, setIsSearching] = useState(false);
   const [searchResult, setSearchResult] = useState([]);
-  const [error, setError] = useState("") 
-  const {data} = useContext(ShowsContext);
+  const [error, setError] = useState("");
 
   function handleSearch(input){
    if(input.trim() !== ""){
