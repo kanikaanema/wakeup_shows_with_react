@@ -1,5 +1,5 @@
 import './App.css';
-import { RouterProvider, Route, createRoutesFromElements, BrowserRouter, Routes, } from 'react-router-dom';
+import { RouterProvider, Route, createRoutesFromElements, BrowserRouter, Routes, HashRouter, } from 'react-router-dom';
 import { createBrowserRouter } from 'react-router-dom';
 import Root from "./components/Root/Root"
 import Shows from './components/Shows/Shows';
@@ -13,7 +13,7 @@ function App() {
   return (
     <ShowsContextProvider>
 
-      <BrowserRouter basename='/wakeup_shows_with_react'>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Root />}>
             <Route path='/shows' element={<Shows />} />,
@@ -21,7 +21,7 @@ function App() {
           </Route>
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </ShowsContextProvider>
   )
