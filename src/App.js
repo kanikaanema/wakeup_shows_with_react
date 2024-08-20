@@ -10,7 +10,7 @@ import SearchResult from './components/SearchResults/SearchResults';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<Root />}>
+      <Route path='/wakeup_shows_with_react' element={<Root />}>
         <Route path='/Shows' element={<Shows />} />,
         <Route path='/search-result' element={<SearchResult />} />
       </Route>
