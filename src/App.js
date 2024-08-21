@@ -13,7 +13,7 @@ function App() {
   return (
     <ShowsContextProvider>
 
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Root />}>
             <Route path='/shows' element={<Shows />} />,
@@ -21,7 +21,7 @@ function App() {
           </Route>
 
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
     </ShowsContextProvider>
   )
