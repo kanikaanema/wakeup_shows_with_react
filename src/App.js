@@ -13,7 +13,7 @@ function App() {
   return (
     <ShowsContextProvider>
 
-      <BrowserRouter>
+      <BrowserRouter basename='/wakeup_shows_with_react'>
         <Routes>
           <Route path='/' element={<Root />}>
             <Route path='/shows' element={<Shows />} />,
